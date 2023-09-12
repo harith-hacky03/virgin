@@ -9,7 +9,7 @@ import menu2 from '../Assests/menu2.png'
 import close from '../Assests/close.png'
 import vp1 from '../Assests/vp1.png'
 import loc from '../Assests/loc.png'
-import gvid from '../Assests/gvid.mp4'
+import gvid2 from '../Assests/gvid2.mp4'
 gsap.registerPlugin(Flip)
 const Landing_page = () => {
     const head=useRef(null)
@@ -82,7 +82,7 @@ const Landing_page = () => {
             })}
         </div>
         </div>
-        <video ref={imgref} className='z-[-10] md:z-10 md:absolute right-16 top-[147px] w-[330px] md:rounded-s-none rounded-lg mx-auto mt-5 md:mt-0 md:w-[800px] img1 ' controls autoPlay width={900} src={gvid} alt=''/>
+        <video ref={imgref} className='z-[-10] md:z-10 md:absolute right-16 top-[147px] w-[330px] md:rounded-s-none rounded-lg mx-auto mt-5 md:mt-0 md:w-[800px] img1 ' controls autoPlay width={900} src={gvid2} alt=''/>
         <div ref={head} className='title ml-10 hidden md:flex text-[130px]'>Virgin</div>
         <div ref={sh} className='title ml-10 hidden md:flex  top-[150px] text-[130px]'>Shelters</div>
         <div className='call font-semibold md:w-[37%] md:mt-0 mt-10 mx-5 md:text-[16px] text-[13px] md:ml-10'>Virgin Shelters is more than a company; it's a commitment to quality, sustainability, and customer satisfaction. With years of experience and a team of dedicated experts, we have established ourselves as a reputable force in the real estate industry. Our journey began with a singular goal - to create spaces where people can live, work, and flourish. Today, we continue to exceed expectations and set new benchmarks in the sector.</div>
