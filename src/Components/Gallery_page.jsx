@@ -50,7 +50,7 @@ const Gallery_page = () => {
                 )
             })}
            </div>
-        <Carousel   useKeyboardArrows interval={5000}  infiniteLoop showArrows stopOnHover={false} className='mt-8 w-[500px] md:w-[900px] mx-auto'>
+        <Carousel   useKeyboardArrows interval={4000} autoPlay  infiniteLoop showArrows stopOnHover={false} className='mt-8 w-[500px] md:w-[900px] mx-auto'>
                 <div className='w-[330px]  md:w-[700px] md:h-[500px] md:ml-[100px]  mx-5'>
                     <img  className='border-2  border-black' src={Gate} alt=''/>
                 </div>
