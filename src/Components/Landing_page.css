@@ -1,0 +1,38 @@
+.square{
+    background-color: #243202;
+}
+
+.title{
+    color: #243202;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img1{
+    border: 5px solid #FFF;
+}
+
+.int{
+    font-family: 'Inter', sans-serif;
+}
+
+.call{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.tit{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subh{
+    font-family: 'Josefin Sans', sans-serif;
+    font: bolder;
+}
+
+button{
+    border:2px solid #FFF;
+    border-radius: 30px;
+}
+
+.conth{
+    font-family: 'Poppins', sans-serif;
+}
