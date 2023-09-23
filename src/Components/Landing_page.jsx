@@ -9,7 +9,9 @@ import menu2 from '../Assests/menu2.png'
 import close from '../Assests/close.png'
 import vp1 from '../Assests/vp1.png'
 import loc from '../Assests/loc.png'
-import gvid2 from '../Assests/gvid2.mp4'
+import vi2 from '../Assests/vi2.mp4'
+import brochure from '../Assests/borchure.jpg'
+import gre from '../Assests/gre.png'
 gsap.registerPlugin(Flip)
 const Landing_page = () => {
     const head=useRef(null)
@@ -62,7 +64,7 @@ const Landing_page = () => {
             )
         })}
         
-        <button className='ml-24 mr-8 px-3 call text-white z-10 mt-5 cursor-pointer'><img className='z-40 absolute right-[300px] w-[2%] flex' src={loc}/>Coimbatore,Tamil Nadu</button>
+        <a href={brochure} className='z-10 flex' download=""><button className='ml-16 py-2 mr-8 flex px-3 call text-white  z-10 mt-5 cursor-pointer'><img src={gre} className='w-[25px] mr-2'/>Download Brochure</button></a>
         
         </div>
         <div className='square relative w-[0px] h-[0px]  md:absolute md:right-[500px] md:top-[138px] md:w-[370px] md:h-[470px]'></div>
@@ -72,7 +74,7 @@ const Landing_page = () => {
         <img onClick={()=>{setMenu(false)}} className='w-[30px] ml-5' src={menu2}  alt=''/>
         <div className='title ml-8 text-3xl'>Virgin Shelters</div>
         </div>
-        <div className={`overflow-y-hidden delay-100 absolute top-[-5px] overflow-hidden h-[70vh]  rounded-lg bg-black text-white  call w-[100%] z-30 ${menu&&'hidden'}`}>
+        <div className={`overflow-y-hidden delay-100 absolute top-[-5px] overflow-hidden h-[100vh]  rounded-lg bg-[#0f273c] text-white  call w-[100%] z-30 ${menu&&'hidden'}`}>
             <img onClick={()=>{setMenu(true)}}  className='bg-white w-[30px] absolute top-5 right-5' src={close} />
             <a href='#Logo' onClick={()=>{setMenu(true)}}><img  className='w-[60px] mt-20 mx-auto' src={vp1}/></a>
             {leftnav.map((l)=>{
@@ -80,9 +82,11 @@ const Landing_page = () => {
                     <a href={`#${l}`} onClick={()=>{setMenu(true)}} className=' ease-in-out duration-500 transition-all block mt-16 call font-bold cursor-pointer'>{l}</a>
                 )
             })}
+            <a href={brochure} className='z-10 flex mt-8' download=""><button className='ml-16 py-2 mr-8 flex px-3 call text-white  z-10 mt-5 cursor-pointer'><img src={gre} className='w-[25px] mr-2'/>Download Brochure</button></a>
+        
         </div>
         </div>
-        <video ref={imgref} className='z-[-10] md:z-10 md:absolute right-16 top-[147px] w-[330px] md:rounded-s-none rounded-lg mx-auto mt-5 md:mt-0 md:w-[800px] img1 ' controls autoPlay width={900} src={gvid2} alt=''/>
+        <video ref={imgref} className='z-[-10] md:z-10 md:absolute right-16 top-[147px] w-[330px] md:rounded-s-none rounded-lg mx-auto mt-5 md:mt-0 md:w-[800px] img1 ' controls autoPlay width={900} src={vi2} alt=''/>
         <div ref={head} className='title ml-10 hidden md:flex text-[130px]'>Virgin</div>
         <div ref={sh} className='title ml-10 hidden md:flex  top-[150px] text-[130px]'>Shelters</div>
         <div className='call font-semibold md:w-[37%] md:mt-0 mt-10 mx-5 md:text-[16px] text-[13px] md:ml-10'>Virgin Shelters is more than a company; it's a commitment to quality, sustainability, and customer satisfaction. With years of experience and a team of dedicated experts, we have established ourselves as a reputable force in the real estate industry. Our journey began with a singular goal - to create spaces where people can live, work, and flourish. Today, we continue to exceed expectations and set new benchmarks in the sector.</div>

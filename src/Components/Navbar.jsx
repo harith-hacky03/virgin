@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Navbar = () => {
-   const navit=["Home","About","Services","Contact"]
+   const navit=["Home","About","Services","Contact","Download"]
   return (
     <div>
         {navit.map((nav)=>{

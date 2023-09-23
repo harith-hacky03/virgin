@@ -29,33 +29,37 @@ const Contact = () => {
     })
   return (
     <div id='Contacts' className=' overflow-x-hidden md:mx-10'>
-        <div ref={head} className='title w-[70%] text-center md:w-[40%] mx-auto text-5xl md:mb-8  py-12 md:text-[130px]'>Contacts</div>
+        <div ref={head} className='title w-[70%] text-center md:w-[40%] mx-auto text-5xl md:mb-8  py-8 md:text-[130px]'>Contacts</div>
         <div className='md:grid grid-cols-2 bg-[#E0DEDE] py-5 rounded-lg'>
     
             <div className='conth md:p-10 p-7  '>
-            <div className='text-left text-2xl   md:text-3xl'>Send Instant Mail To Us</div>
-            <form className='md:mx-20' action="https://formsubmit.co/virginshelters@gmail.com" method="POST">
+            <div className='text-left text-2xl underline decoration-green-700 underline-offset-8  md:text-3xl'>Send Instant Mail To Us</div>
+            <form className='md:mx-10' action="https://formsubmit.co/virginshelters@gmail.com" method="POST">
+                <div className='md:flex'>
                 <div className='mt-10  '>
-                    <label className='mr-28'>Name* :</label>
-                    <input className='md:px-6  rounded-lg py-1' type="text" name="name" required/>
+                    
+                    <input className='md:px-7 md:w-[100%]  pl-3 w-[97%] mr-9 py-2' placeholder='Name*' type="text" name="name" required/>
                     </div>
                     <div className='mt-10'>
-                    <label className='mr-28'>Email* :</label>
-                    <input className='md:px-6 rounded-lg py-1' type="email" name="email" required/>
+                   
+                    <input className='md:px-7 md:w-[100%] md:pr-40 md:ml-3  pl-3 w-[97%] py-2' type="email" placeholder='Email*' name="email" required/>
+                    </div>
+                    </div>
+                    <div className='md:flex'>
+                    <div className='mt-10'>
+                  
+                    <input className='md:px-7 pl-3 w-[97%]  py-2 mr-9' placeholder='Mobile Number*' type='number' name="mobile number" required/>
                     </div>
                     <div className='mt-10'>
-                    <label className='mr-8'>Mobile Number* :</label>
-                    <input className='md:px-6 rounded-lg py-1' type='number' name="mobile number" required/>
+                     
+                        <input className='md:px-7 md:w-[100%] md:ml-2 md:pr-40  w-[97%] pl-3  py-2' placeholder='City*' type='text' name='city' />
                     </div>
-                    <div className='mt-10'>
-                        <label className='mr-32'>City :</label>
-                        <input className='md:px-6 rounded-lg py-1' type='text' name='city' />
                     </div>
                     <div className='mt-10 items-center'>
-                    <label className='md:mr-[89px] md:absolute '>Message* :</label>
-                    <textarea className='md:px-8 h-32 md:h-20 md:absolute left-[50px]  border-black md:left-[330px] rounded-lg ' type='text' name='message' required />
+                  
+                    <textarea className='md:w-[37%] w-[97%] pl-3  md:h-20 md:absolute pt-1 px-14   border-black  ' placeholder='Message*' type='text' name='message' required />
                     </div>
-                    <button className='md:mt-24 mt-8 ml-[70%] text-white bg-black px-5 py-1' type="submit">Send</button>
+                    <button className='md:mt-24 mt-8 md:ml-[77%] rounded-none text-white  bg-green-900 px-9 py-1' type="submit">Submit</button>
             </form>
             </div>
             <div className='items-center flex'>
